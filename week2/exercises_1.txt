@@ -1,0 +1,79 @@
+Pseudocode Challenge
+Soal ini terdiri dari 4 nomor!
+
+1. Newton Second Law
+Bunyi hukum II Newton adalah:
+
+Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan berbanding terbalik dengan massa benda. Arah percepatan benda sama dengan arah gaya total yang diberikan pada benda.
+
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+
+ΣF = resultan gaya (Newton)
+
+m = massa benda (kg)
+
+a = percepatan benda (m/s2)
+
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+SET "m" to 600
+SET "a" to 2
+SET "c" to m = 600 /n a = 2 /n
+SET "d" to  CALCULATE m*a
+SET "e" to m+" * "+a+" = "+d
+
+DISPLAY c + e
+
+
+2. Tahun Kabisat
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, dan
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+Buatlah algoritma/pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+GET thn to 400
+
+
+   	IF thn % 4 AND 0 
+         IF thn % 100 AND 0 
+           IF thn % 400 AND 0 THEN
+              DISPLAY "Tahun " thn " adalah kabisat"
+           ELSE
+           
+              DISPLAY "Tahun " thn " adalah bukan kabisat"
+           
+         ELSE
+         
+             DISPLAY "Tahun " thn " adalah kabisat" 
+         
+    ELSE
+         DISPLAY "Tahun " thn " adalah bukan kabisat"
+     
+      
+3. Laundry Day
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma / pseudocode perulangan!
+
+GET VALUE pakaian = 21;
+     
+SET angka = 20;
+SET total = pakaian - angka;
+ 
+    IF pakaian AND angka THEN
+      
+      	DISPLAY "Pakaian sudah mencapai " GET pakaian " nyalakan mesin";  
+      
+      ELSE IF pakaian < angka THEN
+      
+         DISPLAY "mesin tidak mau menyala karna pakaian kurang " GET total " buah";
+
+      ELSE IF pakaian > angka THEN
+      	DISPLAY " Pakaian Kelebihan " GET total " buah"; 
+    
+    ENDIF
+       
+
