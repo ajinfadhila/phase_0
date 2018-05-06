@@ -18,11 +18,10 @@ Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk meng
 
 SET "m" to 600
 SET "a" to 2
-SET "c" to m = 600 /n a = 2 /n
 SET "d" to  CALCULATE m*a
-SET "e" to m+" * "+a+" = "+d
+SET "e" to "m" "*" "a" = "d"
 
-DISPLAY c + e
+DISPLAY  e
 
 
 2. Tahun Kabisat
@@ -34,23 +33,23 @@ Jika tahun habis di bagi 4 dan tidak habis di bagi 100, dan
 Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
 Buatlah algoritma/pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
 
-GET thn to 400
+GET "thn"
 
 
-   	IF thn % 4 AND 0 
-         IF thn % 100 AND 0 
-           IF thn % 400 AND 0 THEN
+   	IF thn % 4 EQUALS 0 
+         IF thn % 100 EQUALS 0 
+           IF thn % 400 EQUALS 0 THEN
               DISPLAY "Tahun " thn " adalah kabisat"
            ELSE
            
-              DISPLAY "Tahun " thn " adalah bukan kabisat"
+              DISPLAY "Tahun" "thn" " adalah bukan kabisat"
            
          ELSE
          
-             DISPLAY "Tahun " thn " adalah kabisat" 
+             DISPLAY "Tahun " "thn" " adalah kabisat" 
          
     ELSE
-         DISPLAY "Tahun " thn " adalah bukan kabisat"
+         DISPLAY "Tahun " "thn" " adalah bukan kabisat"
      
       
 3. Laundry Day
@@ -60,20 +59,40 @@ Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuc
 
 GET VALUE pakaian = 21;
      
-SET angka = 20;
-SET total = pakaian - angka;
+SET angka TO 20;
+SET total TO CALCULATE pakaian - angka;
  
     IF pakaian AND angka THEN
       
-      	DISPLAY "Pakaian sudah mencapai " GET pakaian " nyalakan mesin";  
+      	DISPLAY "Pakaian sudah mencapai " "pakaian" " nyalakan mesin";  
       
       ELSE IF pakaian < angka THEN
       
-         DISPLAY "mesin tidak mau menyala karna pakaian kurang " GET total " buah";
+         DISPLAY "mesin tidak mau menyala karna pakaian kurang "  "total" " buah";
 
       ELSE IF pakaian > angka THEN
-      	DISPLAY " Pakaian Kelebihan " GET total " buah"; 
+      	DISPLAY " Pakaian Kelebihan " "total" " buah"; 
     
     ENDIF
        
 
+4. Periksa Kuku
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas.
+Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi 
+tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+
+
+  SET "jumlah_siswa" to 40
+  SET "maxPanjangKuku" to 5
+  SET "KukuSiswa" to 1
+
+  FOR SET "i" to "jumlah_siswa"  "i" >= "0"
+   
+    IF "kukusiswa[i]" > "maxkuku" THEN
+      DISPLAY "siswa/siswi di Hukum"
+    ELSE 
+      DISPLAY "siswa/siswi di Puji"
+    ENDIF
+  
