@@ -1,14 +1,14 @@
-function groupAnimals(studentsArr) {
+function groupAnimals(hewan) {
     var result=[];
-    for (var i=0; i<studentsArr.length; i++){
+    for (var i=0; i<hewan.length; i++){
         var hasil=[];
-        var awal= studentsArr[i][0];
+        var awal= hewan[i][0];
 
-        var urutan=studentsArr[i];
-        for(var j=studentsArr.length-1; j>i; j--){
-          if(awal===studentsArr[j][0]){
-            urutan=urutan+','+studentsArr[j]
-            studentsArr.splice(j,1);
+        var urutan=hewan[i];
+        for(var j=hewan.length-1; j>i; j--){
+          if(awal===hewan[j][0]){
+            urutan=urutan+','+hewan[j]
+            hewan.splice(j,1);
           }
         }
 
