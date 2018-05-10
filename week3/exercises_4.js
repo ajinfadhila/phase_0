@@ -149,12 +149,12 @@ console.log(obj(input));
 console.log();
 
 
-var irisan1 = input.slice(1,2);
-var irisan2 = irisan1[0];
-var irisan3 = irisan2.slice(0,15);
-console.log(irisan3);
+// var irisan1 = input.slice(1,2);
+// var irisan2 = irisan1[0];
+// var irisan3 = irisan2.slice(0,15);
+// console.log(irisan3);
 
 
-var arr = [1, 2, 15];
-arr.sort(function(value1, value2) { return value1 < value2 });
-console.log(arr); // 15, 2, 1
+// var arr = [1, 2, 15];
+// arr.sort(function(value1, value2) { return value1 < value2 });
+// console.log(arr); // 15, 2, 1
