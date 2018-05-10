@@ -1,9 +1,9 @@
 function balikkata(a){
-	
+
 	var tampung ="";
 	for(var b = a.length -1; b >= 0; b--){
-		tampung+= a.charAt(b);
-	}	
+		tampung+= a[b];
+	}
 	return tampung;
 }
 
@@ -12,6 +12,8 @@ function balikkata(a){
 	console.log(balikkata('I am a bookworm')); // mrowkoob a ma I
 	console.log(balikkata('Coding is my hobby')); // ybboh ym si gnidoC
 	console.log(balikkata('Super')); // repuS
+
+	
 
 
 // perbandingan witout function

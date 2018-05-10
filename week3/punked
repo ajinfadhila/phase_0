@@ -1,0 +1,13 @@
+function punkat (angka , pangkat) {
+  var hasil = angka
+  for(var i = 1; i < pangkat; i++) {
+    hasil *= angka
+  }
+  return hasil
+}
+
+console.log(punkat(3,4))
+console.log(Math.pow(3,4))
+
+console.log(typeof (3<2))
+console.log('a\na')

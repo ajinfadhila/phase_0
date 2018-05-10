@@ -1,13 +1,13 @@
 
     var a = 5;
     var output ="";
-    
+
     for (var i = 1; i <= a; i++){
         for (var j = 1; j <= i; j++){
-            output+= j; 
+            output+= j;
         }
         console.log(output);
-        output = ""; 
+        output = "";
     }
     console.log();
 
@@ -58,10 +58,7 @@ console.log("segitiga berdiri");
     }
 
  var a = 5;
-   
-    for (var i = 1; i <= a; i++) {       
-        console.log("*");      
+
+    for (var i = 1; i <= a; i++) {
+        console.log("*");
     }
-   
-
-

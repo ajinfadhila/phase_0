@@ -19,3 +19,23 @@ console.log(xo('oxooxo')); // false
 console.log(xo('oxo')); // false
 console.log(xo('xxxooo')); // true
 console.log(xo('xoxooxxo')); // true
+
+//no fuction
+var nama = 3;
+var peran = "ksatria";
+
+if (nama === '')  {
+  console.log('nama wajib diisi')
+} else if (typeof nama !== 'number') {
+  console.log('nama harus number')
+} else {
+  if (peran === "ksatria") {
+    console.log(peran + nama)
+  } else if (peran === "tabib") {
+    console.log(peran + nama)
+  } else if (peran === "penyihir") {
+     console.log(peran + nama)
+  } else {
+    console.log('peran kamu salah atau harus diisi')
+  }
+}
