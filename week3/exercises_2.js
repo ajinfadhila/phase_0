@@ -11,26 +11,26 @@
 
 
 
-// function Balikkata(kata){
-// 	let [balik] = [kata];
-// 	let tmp  = [];
-// 	for(let a = balik.length -1; a >= 0; a--){
-// 		tmp = tmp + balik[a]
-//
-// 	}
-//
-// 	return tmp;
-// }
-//
-// 	console.log(Balikkata(['Hello World!','test '])); // sredoC dna dlroW olleH
+function Balikkata(kata){
+	let [balik] = kata;
+	let tmp  = [];
+	for(let a = balik.length -1; a >= 0; a--){
+		tmp = tmp + balik[a]
 
-	function BalikAngka(angka){
-		let balik = angka
-		let tmp = "";
-		for(let a = angka.length -1; a >= 0; a-- ){
-			tmp = tmp + balik[a]
-		}
-		return tmp
 	}
 
-console.log(BalikAngka([1,2,3,4,5]));
+	return tmp;
+}
+
+	console.log(Balikkata(['Hello World!'])); // sredoC dna dlroW olleH
+
+// 	function BalikAngka(angka){
+// 		let balik = angka
+// 		let tmp = "";
+// 		for(let a = angka.length -1; a >= 0; a-- ){
+// 			tmp = tmp + balik[a]
+// 		}
+// 		return tmp
+// 	}
+
+// console.log(BalikAngka([1,2,3,4,5]));
