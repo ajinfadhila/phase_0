@@ -1,5 +1,6 @@
 
 
+
 // function balikkata(kata){
 // 	var huruf = kata;
 // 	var tampung ="";
@@ -22,15 +23,20 @@ function Balikkata(kata){
 	return tmp;
 }
 
-	console.log(Balikkata(['Hello World!'])); // sredoC dna dlroW olleH
+	console.log(Balikkata(['Hello World!'])); // "!dlrow olleh"
 
 // 	function BalikAngka(angka){
 // 		let balik = angka
 // 		let tmp = "";
-// 		for(let a = angka.length -1; a >= 0; a-- ){
-// 			tmp = tmp + balik[a]
+// 		for(let a =0; a < angka.length; a++ ){
+// 			if (a === angka.length-1) {
+// 				tmp =tmp + angka[a]
+// 			}else {
+// 				tmp = tmp +angka[a] +","
+// 			}
 // 		}
 // 		return tmp
 // 	}
-
+// 
 // console.log(BalikAngka([1,2,3,4,5]));
+
