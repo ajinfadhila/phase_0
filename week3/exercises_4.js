@@ -15,94 +15,62 @@
 
 // console.log();
 
-// var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
+// var gifts = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 
 
-var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
+var gifts = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 function dataHandling2(){
-  var a = input;
-  input.splice(1,1,"Roman Alamsyah Elsharawy");
-  input.splice(2,1,"Provinsi Bandar Lampung");
-  input.splice(4,0,"Pria");
-  input.splice(5,1,"SMA Internasional Metro");
+  var a = gifts;
+  gifts.splice(1,1,"Roman Alamsyah Elsharawy");
+  gifts.splice(2,1,"Provinsi Bandar Lampung");
+  gifts.splice(4,0,"Pria");
+  gifts.splice(5,1,"SMA Internasional Metro");
   return a;
-  function test_case(input){
-    let hasil = input[3].split("/");
+  function test_case(gifts){
+    let hasil = gifts[3].split("/");
   	let bln = Number(hasil[1]);
   	// let bln = Number(pecah[1]);
 
     return bln;
   }
-  // console.log(test_case(input));
+  // console.log(test_case(gifts));
   console.log();
 
-  function bulan(blan){
-    var bln = test_case(input);
-    if (bln > 0 && bln <= 12) {
-
-   		switch(bln){
-   			case 1: bln 	= "January"; break;
-   			case 2: bln 	= "February"; break;
-   			case 3: bln 	= "Maret";break;
-   			case 4: bln 	= "April";break;
-   			case 5: bln 	= "Mei";break;
-   			case 6: bln 	= "Juni";break;
-   			case 7: bln 	= "Juli";break;
-   			case 8: bln 	= "Agustus";break;
-   			case 9: bln 	= "September";break;
-   			case 10: bln 	= "Oktober";break;
-   			case 11: bln 	= "November";break;
-   			case 12: bln 	= "Desember";break;
-   		}
-    }
-    return bln;
-  }
-  console.log(bulan(5));
 }
-console.log(dataHandling2(input));
+console.log(dataHandling2(gifts));
+function bulan(blan){
+  // var blan = test_case(gifts);
+  if (blan > 0 && blan <= 12) {
 
-
-// function test_case(input){
-//   let hasil = input[3].split("/");
-// 	let bln = Number(hasil[1]);
-// 	// let bln = Number(pecah[1]);
-//
-//   return bln;
-// }
-// // console.log(test_case(input));
-// console.log();
-//
-// function bulan(blan){
-//   var bln = test_case(input);
-//   if (bln > 0 && bln <= 12) {
-//
-//  		switch(bln){
-//  			case 1: bln 	= "January"; break;
-//  			case 2: bln 	= "February"; break;
-//  			case 3: bln 	= "Maret";break;
-//  			case 4: bln 	= "April";break;
-//  			case 5: bln 	= "Mei";break;
-//  			case 6: bln 	= "Juni";break;
-//  			case 7: bln 	= "Juli";break;
-//  			case 8: bln 	= "Agustus";break;
-//  			case 9: bln 	= "September";break;
-//  			case 10: bln 	= "Oktober";break;
-//  			case 11: bln 	= "November";break;
-//  			case 12: bln 	= "Desember";break;
-//  		}
-//   }
-//   return bln;
-// }
-// console.log(bulan(5));
+    switch(blan){
+      case 1: blan 	= "January"; break;
+      case 2: blan 	= "February"; break;
+      case 3: blan 	= "Maret";break;
+      case 4: blan 	= "April";break;
+      case 5: blan 	= "Mei";break;
+      case 6: blan 	= "Juni";break;
+      case 7: blan 	= "Juli";break;
+      case 8: blan 	= "Agustus";break;
+      case 9: blan 	= "September";break;
+      case 10: blan 	= "Oktober";break;
+      case 11: blan 	= "November";break;
+      case 12: blan 	= "Desember";break;
+    }
+  }
+  // console.log(blan)
+  return blan;
+}
+console.log(bulan(5));
 console.log();
 
 function insertionSort() {
 
 
-  let hasil =input[3].split("/");
-  let coba = [Number(hasil[0]),(hasil[1]),(hasil[2])];
+  let hasil =gifts[3].split("/");
+  let coba = [Number(hasil[0]),(hasil[1]),Number(hasil[2])];
+  // console.log(coba)
   var temp;
 
   for(var i = 0; i < coba.length; i++){
@@ -118,43 +86,33 @@ function insertionSort() {
      coba[min] = temp;
  }
 
+
   return coba;
 }
 console.log(insertionSort());
 
 
-//
-// function tgl(){
-//   let hasil = input[3].split("/");
-//
-//   hasil.sort(function(value1, value2) {
-//
-//      return value1[1] < value2[2]
-//    });
-//   return hasil;
-// }
-// console.log(tgl());
 console.log();
 
-function obj(input){
-  let nama = input[1][0];
-  let hasil = input[3].split("/");
+function obj(gifts){
+  let nama = gifts[1][0];
+  let hasil = gifts[3].split("/");
   let butuh = hasil.join('-');
 
 	// let bln = Number(pecah[1]);
 
   return butuh;
 }
-console.log(obj(input));
+console.log(obj(gifts));
 console.log();
 
 
-// var irisan1 = input.slice(1,2);
-// var irisan2 = irisan1[0];
-// var irisan3 = irisan2.slice(0,15);
-// console.log(irisan3);
-
-
+var irisan1 = gifts.slice(1,2);
+var irisan2 = irisan1[0];
+var irisan3 = irisan2.slice(0,15);
+console.log(irisan3);
+//
+//
 // var arr = [1, 2, 15];
 // arr.sort(function(value1, value2) { return value1 < value2 });
 // console.log(arr); // 15, 2, 1

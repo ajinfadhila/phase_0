@@ -1,42 +1,35 @@
 
 
 
-// function balikkata(kata){
-// 	var huruf = kata;
-// 	var tampung ="";
-// 	for(var b = huruf.length -1; b >= 0; b--){
-// 		tampung+= kata[b];
-// 	}
-// 	return tampung;
-// }
+
+// Mengakses Nilai Dalam Array
+//
+// Tahukah kamu jika string adalah sebuah array? Kamu dapat mengakses karakter-karakter pada sebuah string layaknya mengakses nilai pada sebuah array. Untuk membuktikannya, kerjakanlah tantangan ini!
+// Objectives
+//
+//     Mengetahui properties Pada Array
+//     Mengerti Cara Mengakses Nilai Dalam Array
+//
+// Directions
+//
+// Buatlah sebuah fungsi dengan nama balikString. Fungsi ini akan menerima argumen sebuah string dan mengembalikan kebalikannya.
+// Example
+//
+// //input "hello world!"
+// //output
+// "!dlrow olleh"
+//
+// Hints
+//
+// Untuk membantumu mengerjakan tantangan ini, gunakanlah properti length pada sebuah array yang akan memberikan panjang dari array-nya. Ingat, indeks sebuah array pada JavaScript dimulai dari 0. Untuk tugas ini, kamu wajib menggunakan looping dan dilarang menggunakan sintaks .reverse!
 
 
-
-function Balikkata(kata){
-	let [balik] = kata;
-	let tmp  = [];
-	for(let a = balik.length -1; a >= 0; a--){
-		tmp = tmp + balik[a]
-
+function balikString(kata){
+	var huruf = kata;
+	var tampung ="";
+	for(var b = huruf.length -1; b >= 0; b--){
+		tampung+= kata[b];
 	}
-
-	return tmp;
+	return tampung;
 }
-
-	console.log(Balikkata(['Hello World!'])); // "!dlrow olleh"
-
-// 	function BalikAngka(angka){
-// 		let balik = angka
-// 		let tmp = "";
-// 		for(let a =0; a < angka.length; a++ ){
-// 			if (a === angka.length-1) {
-// 				tmp =tmp + angka[a]
-// 			}else {
-// 				tmp = tmp +angka[a] +","
-// 			}
-// 		}
-// 		return tmp
-// 	}
-// 
-// console.log(BalikAngka([1,2,3,4,5]));
-
+console.log(balikString("hello world!"))

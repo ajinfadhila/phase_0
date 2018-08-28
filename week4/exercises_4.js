@@ -1,26 +1,34 @@
-function cariModus(numbers) {
-    // as result can be bimodal or multi-modal,
-    // the returned result is provided as an array
-    // mode of [3, 5, 4, 4, 1, 1, 2, 3] = [1, 3, 4]
-    var modes = [], count = [], i, number, maxIndex = 0;
-
-    for (i = 0; i < numbers.length; i += 1) {
-        number = numbers[i];
-        count[number] = (count[number] || 0) + 1;
-        if (count[number] > maxIndex) {
-            maxIndex = count[number];
+function cariModus(arr) {
+    // you can only write your code here!
+    var tmp = 0;
+    var tamp = 0;
+    var modus = 0;
+    for (var i = 0; i < arr.length; i++) {
+      for (var j = 0; j < arr.length; j++) {
+        if(arr[i] === arr[j] && i !== j){
+          tmp++
+          if (tmp > tamp) {
+            tamp = tmp;
+            modus = i;
+            //console.log(modus)
+          }
         }
+      }
     }
-
-    for (i in count)
-        if (count.hasOwnProperty(i)) {
-            if (count[i] === maxIndex) {
-                modes.push(Number(i));
-            }
-        }
-
-    return modes;
+    if (modus === 0) {
+      return -1;
+    }
+    var nilaisama = 0;
+    for (var k = 0; k < arr.length; k++) {
+      nilaisama = nilaisama + arr[k]
+      // console.log(nilaisama/arr.length)
+      if(nilaisama/arr.length === arr[k]) {
+        return -1;
+      }
+    }
+     return arr[modus]
 }
+
 
 console.log(cariModus([10, 4, 5, 2, 4])); // 4
 console.log(cariModus([5, 10, 10, 6, 5])); // 5

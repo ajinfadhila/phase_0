@@ -29,7 +29,7 @@ console.log("");
 console.log("3. Breaking Sentence (Again) using Substring");
 var word3 				= 'wow JavaScript is so cool';
 var exampleFirstWord3 	= word.substring(0, 3);
-var secondWord3 		= word.substring(4, 13); // do your own!
+var secondWord3 		= word.substring(4, 14); // do your own!
 var thirdWord3 			= word.substring(15, 17); // do your own!
 var fourthWord3 		= word.substring(18, 20); // do your own!
 var fifthWord3 			= word.substring(21, 25);; // do your own!
@@ -44,7 +44,7 @@ console.log();
 console.log("4. Breaking Sentence (yet Again) and Count Each Length");
 var word4 = 'wow JavaScript is so cool';
 var exampleFirstWord4 	= word.substring(0, 3);
-var secondWord4 		= word.substring(4, 13); // do your own!
+var secondWord4 		= word.substring(4, 14); // do your own!
 var thirdWord4 			= word.substring(15, 17); // do your own!
 var fourthWord4 		= word.substring(18, 20); // do your own!
 var fifthWord4 			= word.substring(21, 25);; // do your own!

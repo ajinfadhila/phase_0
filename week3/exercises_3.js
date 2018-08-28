@@ -26,8 +26,8 @@ function dataHandling(b){
 
   var strings = ''
 	for(var a = 0 ; a <= b.length -1 ; a++){
-		
-		strings = strings + "Nomor ID : "+b[a][0]+"\n"+'Nama Lengkap : ' + b[a][1]+"\n"+'TTL : ' + b[a][1]+"\n"+'Hobby : ' + b[a][1] + '\n\n';
+
+		strings = strings + "Nomor ID : "+b[a][0]+"\n"+'Nama Lengkap : ' + b[a][1]+"\n"+'TTL : ' + b[a][2]+"\n"+'Hobby : ' + b[a][3] + '\n\n';
 
 	}
   return strings

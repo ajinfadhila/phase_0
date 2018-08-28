@@ -21,8 +21,8 @@ console.log("Tugas 2");
 console.log();
 console.log("Tugas 3");
 
-function processSentence(hasil){
-	hasil = "Nama saya "+name +" umur saya "+ age +" tahun, alamat saya di "+ address + ", dan saya punya hobby "+ hobby;
+function processSentence(name,age,address,hobby){
+	var hasil = "Nama saya "+name +" umur saya "+ age +" tahun, alamat saya di "+ address + ", dan saya punya hobby "+ hobby;
 	return hasil;
 }
 var name = "Agus";
