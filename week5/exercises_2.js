@@ -21,8 +21,7 @@ function naikAngkot(arrPenumpang) {
      obj.bayar = harga *(rute.indexOf(obj.tujuan)-rute.indexOf(obj.naikDari))
      arr.push(obj)
   }
-  console.log(arr)
-
+  return arr
 }
 
 //TEST CASE

@@ -1,13 +1,11 @@
+
 /*
 Toko X yang sedang melakukan SALE ingin menghitung jumlah profit untuk setiap jenis baransg yang terjual pada hari itu.
-
 Barang-barang SALE yang akan dihitung penjualannya:
-
 Sepatu brand Stacattu seharga 1500000 dan stock barang yang tesedia 10
 Baju brand Zoro seharga 500000 dan stock barang yang tesedia 2
 Sweater brand Uniklooh seharga 175000 dan stock barang yang tersedia 1
 Function akan menerima array yang berisikan object pembeli (nama pembeli, barang yang ingin dibeli dan jumlah barang yang dibelinya). Jika stock barang kurang dari jumlah yang ingin dibeli oleh pembeli maka pembeli batal untuk membeli barang tersebut.
-
 Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut berisi objek-objek barang dari toko X tersebut yang berisikan info nama barang, siapa saja yang membeli, sisa stock barang dan total pemasukan untuk barang tersebut
 */
 

@@ -1,4 +1,3 @@
-
 // var coba = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 // function dataHandling2(aja){
@@ -111,8 +110,3 @@ var irisan1 = gifts.slice(1,2);
 var irisan2 = irisan1[0];
 var irisan3 = irisan2.slice(0,15);
 console.log(irisan3);
-//
-//
-// var arr = [1, 2, 15];
-// arr.sort(function(value1, value2) { return value1 < value2 });
-// console.log(arr); // 15, 2, 1

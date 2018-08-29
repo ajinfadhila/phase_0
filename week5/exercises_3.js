@@ -1,4 +1,3 @@
-//
 // Logic Challenge: Highest Score
 //
 // Implementasikan function highestScore untuk mendapatkan student dengan nilai tertinggi dari setiap class:
@@ -27,28 +26,28 @@ function highestScore (students) {
 }
 
 // TEST CASE
-// console.log(highestScore([
-//   {
-//     name: 'Dimitri',
-//     score: 90,
-//     class: 'foxes'
-//   },
-//   {
-//     name: 'Alexei',
-//     score: 85,
-//     class: 'wolves'
-//   },
-//   {
-//     name: 'Sergei',
-//     score: 74,
-//     class: 'foxes'
-//   },
-//   {
-//     name: 'Anastasia',
-//     score: 78,
-//     class: 'wolves'
-//   }
-// ]));
+console.log(highestScore([
+  {
+    name: 'Dimitri',
+    score: 90,
+    class: 'foxes'
+  },
+  {
+    name: 'Alexei',
+    score: 85,
+    class: 'wolves'
+  },
+  {
+    name: 'Sergei',
+    score: 74,
+    class: 'foxes'
+  },
+  {
+    name: 'Anastasia',
+    score: 78,
+    class: 'wolves'
+  }
+]));
 
 // {
 //   foxes: { name: 'Dimitri', score: 90 },
@@ -74,8 +73,7 @@ console.log(highestScore([
   },
   {
     name: 'Albert',
-    // score: 71,
-    score: 89,
+    score: 71,
     class: 'wolves'
   },
   {
